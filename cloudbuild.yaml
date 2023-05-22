@@ -4,7 +4,7 @@ steps:
       - app
       - create
       - --project=parser-387505
-      - --region=asia-south1
+      - --region=asia-south2
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - app
