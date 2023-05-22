@@ -3,16 +3,16 @@ steps:
     args:
       - app
       - create
-      - --project=parser-387505
-      - --region=asia-south2
+      - --project=resparser-387510
+      - --region=us-central1
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - app
       - deploy
-      - --project=parser-387505
+      - --project=resparser-387510
       - --version=$SHORT_SHA
       - --quiet
     env:
-      - 'PROJECT_ID=parser-387505'
+      - 'PROJECT_ID=resparser-387510'
       - 'SHORT_SHA=$_SHORT_SHA'
 timeout: '10m'
