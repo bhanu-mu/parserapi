@@ -13,6 +13,6 @@ steps:
       - --version=$SHORT_SHA
       - --quiet
     env:
-      - 'PROJECT_ID=parser-387505
+      - 'PROJECT_ID=parser-387505'
       - 'SHORT_SHA=$_SHORT_SHA'
 timeout: '10m'
