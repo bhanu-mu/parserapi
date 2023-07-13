@@ -12,6 +12,7 @@ import json
 from nltk.tokenize import word_tokenize
 import nltk
 from nltk.stem import WordNetLemmatizer
+nltk.download(‘stopwords’)
 
 import string
 import csv

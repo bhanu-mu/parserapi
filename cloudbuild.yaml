@@ -2,12 +2,7 @@ steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - app
-      - create
-      - --project=resparser-387510
-      - --region=us-central1
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-      - app
+      
       - deploy
       - --project=resparser-387510
       - --version=$SHORT_SHA
