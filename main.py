@@ -11,6 +11,7 @@ import docx2txt
 import json
 from nltk.tokenize import word_tokenize
 import nltk
+from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 nltk.download('stopwords')
 
