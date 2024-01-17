@@ -14,6 +14,9 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 import string
 import csv
@@ -113,7 +116,7 @@ def extract_name(text):
         # First name and Last name are always Proper Nouns
     pattern = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]
 
-    matcher.add('NAME', [pattern], None)
+    matcher.add('NAME', [pattern])
 
     matches = matcher(nlp_text)
 
